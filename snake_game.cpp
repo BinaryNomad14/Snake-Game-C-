@@ -38,6 +38,10 @@ void sleep_ms(int milliseconds){
     Sleep(milliseconds);
 }
 
+void setConsoleColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+}
+
 #else
 bool kbhit() {
     struct termios oldt, newt;
@@ -74,6 +78,16 @@ int getkey() {
 void sleep_ms(int milliseconds){
     usleep(milliseconds*1000);
 }
+
+#define RESET   "\033[0m"
+#define RED     "\033[31m"
+#define GREEN   "\033[32m"
+#define WHITE   "\033[97m"
+#define BG_YELLOW "\033[43m"
+#define BG_GREEN  "\033[42m"
+#define BG_BLACK  "\033[40m"
+#define BG_BLUE    "\033[94m"
+#define BG_RED    "\033[41m"
 #endif
 
 void clearScreen() {
@@ -234,6 +248,19 @@ public:
     }
 
     void drawCell(int i, int j, bool isSnake, bool isFood, bool isSpecialFood) {
+    #ifdef _WIN32
+        if (isSnake) {
+            setConsoleColor(FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+            cout << "O";
+        } else if (isFood) {
+            setConsoleColor(FOREGROUND_RED | FOREGROUND_INTENSITY);
+            cout << "@";
+        } else {
+            setConsoleColor(FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
+            cout << " ";
+        }
+        setConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    #else
     if(isSnake) {
         cout << BG_GREEN << RED << "O" << RESET;
     } else if(isFood) {
@@ -243,6 +270,7 @@ public:
     } else {
         cout << BG_GREEN << " " << RESET;
     }
+    #endif
 }
 
 void board() {
