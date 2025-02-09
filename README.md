@@ -43,6 +43,13 @@ This project is a modern implementation of the classic Snake game developed in *
 
 ---
 
+## Data Structures 
+We have used Linked List for the snake's body as Linked Lists allocate memory dynamically. As in our logic we need to add Head and remove Tail form the end (if the snake does not grow in size), Linked Lists help us do that in least time as they have Time Complexity O(1) for adding and deleting node at head or end.
+
+We have used pairs for food to assign them X and Y co-oridnates.
+
+---
+
 ## Installation and Setup
 ### Windows
 1. Ensure that **MinGW** or any compatible C++ compiler is installed.
