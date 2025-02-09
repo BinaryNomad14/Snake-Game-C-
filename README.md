@@ -1,4 +1,4 @@
-# Snake Game in C++
+# Snake Game Using C++
 
 ## Project Overview
 This project is a modern implementation of the classic Snake game developed in **C++** as a part of our college assignment. The game showcases advanced use of **linked lists**, **dynamic memory management**, and platform-independent console handling techniques.
