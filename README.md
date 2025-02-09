@@ -93,7 +93,6 @@ We have used pairs for food to assign them X and Y co-oridnates.
 
 ---
 
-## Acknowledgments
-We express our gratitude to our professor and peers for their valuable guidance and support throughout this project.
+Have a great time playing the game!
 
 ---
