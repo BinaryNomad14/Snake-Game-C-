@@ -1,4 +1,4 @@
-# Snake-Game-C++-
+# Snake Game Using C++
 A brief description of what this project does and Explatanation.
 
 
