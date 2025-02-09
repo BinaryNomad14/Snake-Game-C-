@@ -4,10 +4,10 @@
 This project is a modern implementation of the classic Snake game developed in **C++** as a part of our college assignment. The game showcases advanced use of **linked lists**, **dynamic memory management**, and platform-independent console handling techniques.
 
 ## Authors
-- ** Karan Shukla (202401479)
-- ** Digvijay Parmar (202401444)
-- ** Shlok Gohel (202401476)
-- ** Kush Patel (202401448)
+- Karan Shukla (202401479)
+- Digvijay Parmar (202401444)
+- Shlok Gohel (202401476)
+- Kush Patel (202401448)
 
   ---
   
