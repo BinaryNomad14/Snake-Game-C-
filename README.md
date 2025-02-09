@@ -1,12 +1,12 @@
 # Snake Game Using C++
-A brief description of what this project does and Explatanation.
+We have created a Snake Game using c++ which runs on your system's Terminal. Our game is similar to the classic Nokia Snake Game. We have added some extra features which allow the user to choose difficuly levels and different times of food which offer different points.
 
 
-## Author
+## Authors
 
 -Group name:"SKDK"
 
--Group Number:5(Sec-B)
+-Group Number:5 (Section-B)
 
 - Digvijay Parmar(202401444)
 
